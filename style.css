@@ -1,0 +1,54 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111827;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+}
+
+h1{
+    color:#3fa9ff;
+}
+
+.profiles{
+    margin:20px 0;
+}
+
+.profiles button{
+    margin:5px;
+}
+
+.stats{
+    margin-top:30px;
+    font-size:22px;
+}
+
+button{
+    border:none;
+    border-radius:10px;
+    padding:15px 25px;
+    cursor:pointer;
+    font-size:18px;
+    margin:10px;
+}
+
+.win{
+    background:#2ecc71;
+    color:white;
+}
+
+.loss{
+    background:#e74c3c;
+    color:white;
+}
+
+.reset{
+    background:#7f8c8d;
+    color:white;
+}

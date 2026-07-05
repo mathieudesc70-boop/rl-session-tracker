@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RL Session Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 RL Session Tracker</h1>
+
+    <div class="profiles">
+        <button onclick="switchProfile('verso')">👤 Verso</button>
+        <button onclick="switchProfile('duo')">👥 Verso & Leqooo</button>
+        <button onclick="switchProfile('leqooo')">👤 Leqooo</button>
+    </div>
+
+    <h2 id="profileName">👤 Verso</h2>
+
+    <div class="stats">
+        <p>🏆 Wins : <span id="wins">0</span></p>
+        <p>❌ Losses : <span id="losses">0</span></p>
+        <p>🎮 Games : <span id="games">0</span></p>
+        <p>📈 Winrate : <span id="winrate">0%</span></p>
+
+        <p>🔥 Winstreak : <span id="streak">0</span></p>
+        <p>💀 Losestreak : <span id="losestreak">0</span></p>
+        <p>⭐ Best Winstreak : <span id="bestStreak">0</span></p>
+    </div>
+
+    <div class="buttons">
+        <button class="win" onclick="addWin()">🟢 WIN</button>
+        <button class="loss" onclick="addLoss()">🔴 LOSS</button>
+        <button class="reset" onclick="resetProfile()">🔄 RESET</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
