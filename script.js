@@ -136,16 +136,6 @@ function addLoss() {
 function resetProfile() {
 
     /*
-       Le Total ne peut jamais être reset.
-    */
-
-    if (current === "total") {
-        alert("Le Total contient ton historique et ne peut pas être réinitialisé.");
-        return;
-    }
-
-
-    /*
        Pour le profil Verso :
        comportement classique.
     */
@@ -237,6 +227,29 @@ function resetProfile() {
 
         save();
         updateDisplay();
+
+        return;
+    }
+
+
+    /*
+       Pour le Total :
+       reset complet de l'historique de saison,
+       après confirmation.
+    */
+
+    if (current === "total") {
+
+        if (!confirm("Réinitialiser le Total ? Cela effacera tout l'historique de la saison.")) {
+            return;
+        }
+
+        profiles.total = createProfile();
+
+        save();
+        updateDisplay();
+
+        return;
     }
 }
 
